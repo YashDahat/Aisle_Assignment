@@ -4,7 +4,7 @@
 
 Below is the implementation I came up with for the robust like update scheduler.
 
-Assumption: Here we are assuming that our server is running on UTC time.
+Assumption: Here I am assuming that our server is running on UTC time.
 
 1. **Create a Separate Table for Time Zones:**
    - We will set up a new table in our database to store all unique time zones in which our users are located. This table should contain the time zone names.
