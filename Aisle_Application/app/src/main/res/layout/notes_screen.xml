@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    &lt;!&ndash; Replace "your_clickable_image" with the name of your image resource or provide a valid drawable reference &ndash;&gt;-->
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageClickable"-->
+<!--        android:layout_width="377dp"-->
+<!--        android:layout_height="278dp"-->
+<!--        android:layout_below="@id/tvPersonalMessages"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src=""-->
+<!--        tools:layout_editor_absoluteX="18dp"-->
+<!--        tools:layout_editor_absoluteY="62dp" />-->
+
+    <!--    &lt;!&ndash; Footer Options &ndash;&gt;-->
+
+    <TextView
+        android:id="@+id/tvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Notes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonalMessages"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.781"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvPersonalMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNotes"
+        android:gravity="center"
+        android:text="Personal messages to you"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/tvInterestedInYou"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="276dp"
+        android:gravity="left"
+        android:text="Interested In you"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPersonalMessages" />
+
+    <!--    &lt;!&ndash; Clickable Images Side by Side &ndash;&gt;-->
+
+    <TextView
+        android:id="@+id/tvPremiumMembersNote"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/tvInterestedInYou"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Premium members can view all their likes at once"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInterestedInYou" />
+
+    <Button
+        android:id="@+id/btnUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPremiumMembersNote"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="308dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Upgrade"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvPremiumMembersNote"
+        app:layout_constraintTop_toBottomOf="@+id/tvPersonalMessages" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Replace "your_clickable_image1" with the name of your first image resource or provide a valid drawable reference -->
+
+        <!-- Replace "your_clickable_image2" with the name of your second image resource or provide a valid drawable reference -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Discover"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Notes"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Matches"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Profile"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageClickable1"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_height="211dp"-->
+<!--        android:src=""-->
+<!--        tools:layout_editor_absoluteX="7dp"-->
+<!--        tools:layout_editor_absoluteY="434dp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageClickable2"-->
+<!--        android:layout_width="203dp"-->
+<!--        android:layout_height="211dp"-->
+<!--        android:src=""-->
+<!--        tools:layout_editor_absoluteX="203dp"-->
+<!--        tools:layout_editor_absoluteY="434dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
