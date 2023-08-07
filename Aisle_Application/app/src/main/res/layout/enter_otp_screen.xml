@@ -9,12 +9,11 @@
         android:id="@+id/editTextPhoneNumber"
         android:layout_width="214dp"
         android:layout_height="24dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
         android:text="Country Code + Phone no."
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,66 +21,61 @@
         android:id="@+id/resendOTPLink"
         android:layout_width="117dp"
         android:layout_height="27dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="230dp"
         android:text="Resend OTP"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/OTPSubmit"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextOTP"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="152dp"
         android:background="@drawable/edit_text_drawable"
-        android:textColor="@color/black"
+        android:gravity="center"
         android:hint=""
-        app:layout_constraintBottom_toTopOf="@+id/OTPSubmit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/OTPSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="352dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/yellow"
         android:onClick="onContinueButtonClick"
         android:text="Continue"
-        android:backgroundTint="@color/yellow"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="110dp"
         android:text="Enter your OTP"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextOTP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/EditPhoneNoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="83dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/edit_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
